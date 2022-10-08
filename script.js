@@ -85,6 +85,8 @@ btnCookie.addEventListener("click",()=>{
 message.remove();
 });
 
+console.log("New edit")
+
 
 
 
