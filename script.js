@@ -78,3 +78,4 @@ btnCookie.addEventListener('click', () => {
   message.remove();
 });
 console.log('laptop edit');
+console.log("and master edit")
