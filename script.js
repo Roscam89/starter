@@ -19,8 +19,7 @@ const closeModal = function () {
   overlay.classList.add('hidden');
 };
 
-btnsOpenModal.forEach(btn=>btn.addEventListener("click", openModal));
-
+btnsOpenModal.forEach(btn => btn.addEventListener('click', openModal));
 
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
@@ -34,35 +33,32 @@ document.addEventListener('keydown', function (e) {
 ////////////////////////////////////////////
 ///////////////////////////////////////////
 
-
 //----------------------Selecting elements ex----------------------//
 
 //console.log(document.documentElement);
 //console.log(document.head);
 //console.log(document.body);
 
-const header = document.querySelector(".header");
+const header = document.querySelector('.header');
 
-const allSelections = document.querySelectorAll(".section");
+const allSelections = document.querySelectorAll('.section');
 //console.log(allSelections);
 
-document.getElementById("section--1");
-const allButtons = document.getElementsByTagName("button");
+document.getElementById('section--1');
+const allButtons = document.getElementsByTagName('button');
 //console.log(allButtons);
 
 //console.log(document.getElementsByClassName("btn"));
 
-
 //-------------Creating and inserting elemets ex-------------------//
 
-const message = document.createElement("div");
+const message = document.createElement('div');
 
-message.classList.add("cookie-message");
+message.classList.add('cookie-message');
 
 message.innerHTML = `We use cookies for improved functionality and analytics. 
 <button class="btn 
 btn--close-cookie"> Got it</button>`;
-
 
 //header.append(message);
 
@@ -72,21 +68,14 @@ btn--close-cookie"> Got it</button>`;
 
 header.after(message);
 
-
 //-----------Delete elements----------//
 
- const btnCookie=document.querySelector(".btn--close-cookie");
+const btnCookie = document.querySelector('.btn--close-cookie');
 
+btnCookie.addEventListener('click', () => {
+  // message.innerHTML=""
 
-
-btnCookie.addEventListener("click",()=>{
-// message.innerHTML=""
-
-message.remove();
+  message.remove();
 });
 
-
-
-
-
-
+console.log('a test git');
