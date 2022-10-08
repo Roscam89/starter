@@ -77,5 +77,3 @@ btnCookie.addEventListener('click', () => {
 
   message.remove();
 });
-
-console.log('a test git');
