@@ -77,4 +77,5 @@ btnCookie.addEventListener('click', () => {
 
   message.remove();
 });
+console.log("New commit master")
 
