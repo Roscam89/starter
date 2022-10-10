@@ -77,5 +77,39 @@ btnCookie.addEventListener('click', () => {
 
   message.remove();
 });
-console.log("New commit master")
 
+//-------Styles-----//
+
+message.style.backgroundColor = '#37381d';
+message.style.width = '120%';
+
+//message.style.height = '60px';
+
+message.style.height =
+  Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
+
+document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+//------Atributes-----//
+
+const logo = document.querySelector('.nav__logo');
+console.log(logo.alt);
+console.log(logo.className);
+
+logo.alt = 'Beautifull minimalist logo';
+
+//---- Non standard atributes----//
+logo.setAttribute('designer', 'Jonas');
+console.log(logo.getAttribute('designer'));
+
+console.log(logo.src);
+console.log(logo.getAttribute('src'));
+
+const link = document.querySelector('.twitter-link');
+console.log(link.href);
+console.log(link.getAttribute('href'));
+
+//---Data atributes---//
+//logo.setAttribute('data-version-number', '3.0');
+console.log(logo.dataset.versionNumber);
+console.log(logo);
